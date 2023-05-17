@@ -8,14 +8,12 @@ using System.Threading;
 public class monster_encounter : MonoBehaviour
 {
     [SerializeField] private Collider2D player;
-    [SerializeField] private int encounterPercent = 50;
-    [SerializeField] private float delay = 5;
-    private BoxCollider2D monsterCollider;
     [SerializeField] private GameObject playerTag;
-
+    [SerializeField][Range(1, 100)] private int encounterPercent;
+    private BoxCollider2D monsterCollider;
     private Collider2D other;
-    bool running = false;
-    float timer;
+    private static int min = 1;
+    private static int max = 1000;
 
 
     // Start is called before the first frame update
@@ -24,29 +22,17 @@ public class monster_encounter : MonoBehaviour
         monsterCollider = GetComponent<BoxCollider2D>();
     }
 
-
     private void OnTriggerStay2D(Collider2D other)
     {
-
-        running = true;
-        // if (running)
-        // {
-        //     Invoke("EncounterProb", delay);
-
-        //     running = false;
-        // }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        running = false;
+        EncounterProb();
     }
 
     private void EncounterProb()
     {
-        int min = 0;
-        int max = 100;
-        if (Random.Range(min, max) < encounterPercent)
+        int randomNum = Random.Range(min, max);
+        Debug.Log(randomNum);
+
+        if (randomNum < encounterPercent)
         {
             if (playerTag.gameObject.tag == "Player")
             {
@@ -55,19 +41,4 @@ public class monster_encounter : MonoBehaviour
             }
         }
     }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    //     while (running)
-    //     {
-    //         timer += Time.deltaTime;
-    //         if (timer > delay)
-    //         {
-    //             EncounterProb();
-    //         }
-    //     }
-    // }
 }
