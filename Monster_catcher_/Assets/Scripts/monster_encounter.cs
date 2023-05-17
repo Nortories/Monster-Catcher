@@ -2,29 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Threading;
+using UnityEngine.Tilemaps;
 
 
 public class monster_encounter : MonoBehaviour
 {
-    [SerializeField] private Collider2D player;
     [SerializeField] private GameObject playerTag;
     [SerializeField][Range(1, 100)] private int encounterPercent;
-    private BoxCollider2D monsterCollider;
+    [SerializeField] TilemapCollider2D mosterCollider;
+    [SerializeField] string sceneName;
     private Collider2D other;
     private static int min = 1;
-    private static int max = 1000;
+    private static int max = 10000;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        monsterCollider = GetComponent<BoxCollider2D>();
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        EncounterProb();
+        if (playerTag.gameObject.tag == "Player")
+        {
+            // Trigger action when colliding with a TilemapCollider2D
+            EncounterProb();
+        }
     }
 
     private void EncounterProb()
@@ -34,11 +37,8 @@ public class monster_encounter : MonoBehaviour
 
         if (randomNum < encounterPercent)
         {
-            if (playerTag.gameObject.tag == "Player")
-            {
-                SceneManager.LoadScene("TestScene");
+                SceneManager.LoadScene(sceneName);
                 //sceneManager changing to new scene not working
-            }
         }
     }
 }
