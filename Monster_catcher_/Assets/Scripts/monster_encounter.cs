@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class monster_encounter : MonoBehaviour
 {
     [SerializeField] private Collider2D player;
-    [SerializeField] private Scene changeScene;
     private BoxCollider2D monsterCollider;
     
     // Start is called before the first frame update
@@ -16,10 +15,10 @@ public class monster_encounter : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    private void OnTriggerStay2D(Collider2D other){
         if (other.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(changeScene.name);
+            SceneManager.LoadScene("TestScene");
             //sceneManager changing to new scene not working
         }
     }
@@ -28,6 +27,5 @@ public class monster_encounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        OnTriggerEnter2D(player);
     }
 }
