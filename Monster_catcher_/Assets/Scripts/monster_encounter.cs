@@ -24,9 +24,10 @@ public class monster_encounter : MonoBehaviour
         }
     }
 
+
     // Update is called once per frame
     void Update()
     {
-        
+        OnTriggerEnter2D(player);
     }
 }
