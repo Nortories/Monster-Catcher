@@ -39013,7 +39013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTag: {fileID: 1461127348}
-  encounterProbablity: 100
+  encounterProbablity: 150
   mosterCollider: {fileID: 661819664}
   sceneName: TestMonsterScene
 --- !u!19719996 &661819664
