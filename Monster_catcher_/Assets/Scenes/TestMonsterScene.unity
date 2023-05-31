@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 81260112}
   - component: {fileID: 81260111}
   - component: {fileID: 81260110}
+  - component: {fileID: 81260113}
   m_Layer: 5
   m_Name: Run
   m_TagString: Run
@@ -291,7 +292,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1203630870}
+      - m_Target: {fileID: 1203630869}
         m_TargetAssemblyTypeName: UnityEngine.Component, UnityEngine
         m_MethodName: 
         m_Mode: 1
@@ -341,6 +342,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81260108}
   m_CullTransparentMesh: 1
+--- !u!114 &81260113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81260108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1c0e1207ab5464c89c8e6976eebeab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneIndex: 2
+  fightButton: {fileID: 0}
+  checkButton: {fileID: 0}
+  itemButton: {fileID: 0}
+  runButton: {fileID: 0}
 --- !u!1 &414864230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1249,6 +1267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e1c0e1207ab5464c89c8e6976eebeab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneIndex: 0
   fightButton: {fileID: 652484371}
   checkButton: {fileID: 1377204535}
   itemButton: {fileID: 1005628136}
