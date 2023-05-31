@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ButtonEvent : MonoBehaviour
 {
+    [SerializeField] int sceneIndex;
+
     public Button fightButton;
     public Button checkButton;
     public Button itemButton;
@@ -13,6 +16,7 @@ public class ButtonEvent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         Button fight = fightButton.GetComponent<Button>();
         fight.onClick.AddListener(FightButton);
 
@@ -43,5 +47,6 @@ public class ButtonEvent : MonoBehaviour
     void RunButton()
     {
         Debug.Log("The run button was pressed!");
+        SceneManager.LoadScene(sceneIndex);
     }
 }
