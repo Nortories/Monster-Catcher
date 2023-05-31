@@ -1,33 +1,115 @@
 {
-    "creature1": {
-      "name": "Dragon",
-      "height": "30 meters",
-      "weaknesses": ["Ice attacks", "Small size"],
-      "power": 95,
-      "health": 100,
-      "personality": "Fierce",
-      "aggressionLevel": 90,
-      "rarity": 250
+    "stone": {
+      "creature1": {
+        "name": "Dragon",
+        "height": {
+          "min": 25,
+          "max": 35
+        },
+        "power": {
+          "min": 90,
+          "max": 100
+        },
+        "health": {
+          "min": 95,
+          "max": 105
+        },
+        "personality": "Fierce",
+        "aggressionLevel": 90,
+        "rarity": 40
+      },
+      "creature2": {
+        "name": "Griffin",
+        "height": {
+          "min": 2,
+          "max": 3
+        },
+        "power": {
+          "min": 75,
+          "max": 85
+        },
+        "health": {
+          "min": 85,
+          "max": 95
+        },
+        "personality": "Noble",
+        "aggressionLevel": 50,
+        "rarity": 30
+      },
+      "creature3": {
+        "name": "Werewolf",
+        "height": {
+          "min": 1.8,
+          "max": 2.2
+        },
+        "power": {
+          "min": 80,
+          "max": 90
+        },
+        "health": {
+          "min": 90,
+          "max": 100
+        },
+        "personality": "Wild",
+        "aggressionLevel": 80,
+        "rarity": 30
+      }
     },
-    "creature2": {
-      "name": "Griffin",
-      "height": "2.5 meters",
-      "weaknesses": ["Water attacks", "Limited range"],
-      "power": 80,
-      "health": 90,
-      "personality": "Noble",
-      "aggressionLevel": 50,
-      "rarity": 100
-    },
-    "creature3": {
-      "name": "Werewolf",
-      "height": "2 meters",
-      "weaknesses": ["Silver weapons", "Fire"],
-      "power": 85,
-      "health": 95,
-      "personality": "Wild",
-      "aggressionLevel": 80,
-      "rarity": 400
+    "water": {
+      "creature4": {
+        "name": "Leviathan",
+        "height": {
+          "min": 40,
+          "max": 50
+        },
+        "power": {
+          "min": 95,
+          "max": 105
+        },
+        "health": {
+          "min": 100,
+          "max": 110
+        },
+        "personality": "Mysterious",
+        "aggressionLevel": 85,
+        "rarity": 50
+      },
+      "creature5": {
+        "name": "Siren",
+        "height": {
+          "min": 1.5,
+          "max": 2
+        },
+        "power": {
+          "min": 70,
+          "max": 80
+        },
+        "health": {
+          "min": 80,
+          "max": 90
+        },
+        "personality": "Enchanting",
+        "aggressionLevel": 30,
+        "rarity": 30
+      },
+      "creature6": {
+        "name": "Kraken",
+        "height": {
+          "min": 20,
+          "max": 30
+        },
+        "power": {
+          "min": 85,
+          "max": 95
+        },
+        "health": {
+          "min": 90,
+          "max": 100
+        },
+        "personality": "Terrifying",
+        "aggressionLevel": 95,
+        "rarity": 20
+      }
     }
   }
   
