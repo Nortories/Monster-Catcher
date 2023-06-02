@@ -1,28 +1,28 @@
 {
     "stone": {
-      "creature1": {
-        "name": "Dragon",
+      "stone1": {
+        "name": "Troll",
         "height": {
-          "min": 25,
-          "max": 35
+          "min": 15,
+          "max": 25
         },
         "power": {
-          "min": 90,
-          "max": 100
+          "min": 40,
+          "max": 60
         },
         "health": {
-          "min": 95,
-          "max": 105
+          "min": 60,
+          "max": 70
         },
         "personality": "Fierce",
-        "aggressionLevel": 90,
+        "aggressionLevel": 40,
         "rarity": 40
       },
-      "creature2": {
-        "name": "Griffin",
+      "stone2": {
+        "name": "Golems",
         "height": {
-          "min": 2,
-          "max": 3
+          "min": 50,
+          "max": 70
         },
         "power": {
           "min": 75,
@@ -32,12 +32,12 @@
           "min": 85,
           "max": 95
         },
-        "personality": "Noble",
-        "aggressionLevel": 50,
+        "personality": "Grumpy",
+        "aggressionLevel": 60,
         "rarity": 30
       },
-      "creature3": {
-        "name": "Werewolf",
+      "stone3": {
+        "name": "Stone Snake",
         "height": {
           "min": 1.8,
           "max": 2.2
@@ -56,7 +56,7 @@
       }
     },
     "water": {
-      "creature4": {
+      "water1": {
         "name": "Leviathan",
         "height": {
           "min": 40,
@@ -74,7 +74,7 @@
         "aggressionLevel": 85,
         "rarity": 50
       },
-      "creature5": {
+      "water2": {
         "name": "Siren",
         "height": {
           "min": 1.5,
@@ -92,7 +92,7 @@
         "aggressionLevel": 30,
         "rarity": 30
       },
-      "creature6": {
+      "water3": {
         "name": "Kraken",
         "height": {
           "min": 20,
