@@ -1,60 +1,60 @@
 {
   "stone": [
     {
-      "name": "Troll",
-      "height": 15,
-      "power": 40,
-      "health": 60,
-      "personality": "Fierce",
-      "aggressionLevel": 40,
-      "rarity": 40
+      "_name": "Troll",
+      "_height": 15,
+      "_power": 40,
+      "_health": 60,
+      "_personality": "Fierce",
+      "_aggressionLevel": 40,
+      "_rarity": 40
     },
     {
-      "name": "Golems",
-      "height": 50,
-      "power": 75,
-      "health": 85,
-      "personality": "Grumpy",
-      "aggressionLevel": 60,
-      "rarity": 30
+      "_name": "Golems",
+      "_height": 50,
+      "_power": 75,
+      "_health": 85,
+      "_personality": "Grumpy",
+      "_aggressionLevel": 60,
+      "_rarity": 30
     },
     {
-      "name": "Stone Snake",
-      "height": 5,
-      "power": 80,
-      "health": 90,
-      "personality": "Wild",
-      "aggressionLevel": 80,
-      "rarity": 30
+      "_name": "Stone Snake",
+      "_height": 5,
+      "_power": 80,
+      "_health": 90,
+      "_personality": "Wild",
+      "_aggressionLevel": 80,
+      "_rarity": 30
     }
   ],
   "water": [
     {
-      "name": "Leviathan",
-      "height": 40,
-      "power": 95,
-      "health": 100,
-      "personality": "Mysterious",
-      "aggressionLevel": 85,
-      "rarity": 50
+      "_name": "Leviathan",
+      "_height": 40,
+      "_power": 95,
+      "_health": 100,
+      "_personality": "Mysterious",
+      "_aggressionLevel": 85,
+      "_rarity": 50
     },
     {
-      "name": "Siren",
-      "height": 1.5,
-      "power": 70,
-      "health": 80,
-      "personality": "Enchanting",
-      "aggressionLevel": 30,
-      "rarity": 30
+      "_name": "Siren",
+      "_height": 1.5,
+      "_power": 70,
+      "_health": 80,
+      "_personality": "Enchanting",
+      "_aggressionLevel": 30,
+      "_rarity": 30
     },
     {
-      "name": "Kraken",
-      "height": 20,
-      "power": 85,
-      "health": 90,
-      "personality": "Terrifying",
-      "aggressionLevel": 95,
-      "rarity": 20
+      "_name": "Kraken",
+      "_height": 20,
+      "_power": 85,
+      "_health": 90,
+      "_personality": "Terrifying",
+      "_aggressionLevel": 95,
+      "_rarity": 20
     }
   ]
 }
