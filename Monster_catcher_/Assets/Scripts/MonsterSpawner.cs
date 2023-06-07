@@ -47,6 +47,8 @@ public class MonsterSpawner : MonoBehaviour
             // Gen rand monster of TYPE
             Monster enemy = typeOfMonster[randSelector];
 
+            Sprite sprite = Resources.Load<Sprite>("Sprites/" + enemy._name);
+
             // Set values from randomly selected Monster
             _name = enemy._name;
             _height = enemy._height;

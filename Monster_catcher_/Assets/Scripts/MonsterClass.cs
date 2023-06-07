@@ -10,6 +10,8 @@ public class MonsterClass
     public Monster[] stone;
     public Monster[] water;
 
+    // If adding more types also add types to MonsterSpawner.cs switch case
+
 }
 
 [System.Serializable]
