@@ -47,7 +47,11 @@ public class MonsterSpawner : MonoBehaviour
             // Gen rand monster of TYPE
             Monster enemy = typeOfMonster[randSelector];
 
+            // Gets sprite in the "Sprites/" folder thats labed the name of the monster 
+            // Uses Resources folder inside of assests. This helps insure the path
             Sprite sprite = Resources.Load<Sprite>("Sprites/" + enemy._name);
+            // replaces sprite with selected monsters _name
+            spriteRenderer.sprite = sprite;
 
             // Set values from randomly selected Monster
             _name = enemy._name;
@@ -58,7 +62,7 @@ public class MonsterSpawner : MonoBehaviour
             _aggressionLevel = enemy._aggressionLevel;
             _rarity = enemy._rarity;
 
-            Debug.Log($"Monster Spawned{typeOfMonster[randSelector]._name}");
+            Debug.Log($"Monster Spawned {typeOfMonster[randSelector]._name}");
             Debug.Log($"Health = {typeOfMonster[randSelector]._health}");
     }
 }
