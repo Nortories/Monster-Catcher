@@ -17,8 +17,8 @@
 # Collaborators
 
 Allison Berry
-Josh Sooaemalelagi
-Brooklynn Hathaway
+Josh Sooaemalelagi \n
+Brooklynn Hathaway \n
 
 # Useful Websites
 
