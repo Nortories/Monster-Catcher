@@ -16,7 +16,7 @@
 
 # Collaborators
 
-Allison Berry
+Allison Berry.  
 Josh Sooaemalelagi   
 Brooklynn Hathaway    
 
