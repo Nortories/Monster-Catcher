@@ -17,6 +17,7 @@ public class MonsterClass
 [System.Serializable]
 public class Monster
 {
+    public string _id;
     public string _name;
     public float _height;
     public int _power;

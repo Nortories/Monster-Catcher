@@ -355,6 +355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 2
+  _enemey: {fileID: 0}
   fightButton: {fileID: 0}
   checkButton: {fileID: 0}
   itemButton: {fileID: 0}
@@ -1259,6 +1260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 0
+  _enemey: {fileID: 986583374063827982}
   fightButton: {fileID: 652484371}
   checkButton: {fileID: 1377204535}
   itemButton: {fileID: 1005628136}
@@ -1935,6 +1937,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1420312458}
     m_Modifications:
+    - target: {fileID: 986583375983266069, guid: d300aae58e57e344da78c2f44a778d81,
+        type: 3}
+      propertyPath: monsterType
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 986583375983266072, guid: d300aae58e57e344da78c2f44a778d81,
         type: 3}
       propertyPath: m_Name
@@ -2022,3 +2029,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d300aae58e57e344da78c2f44a778d81, type: 3}
+--- !u!1 &986583374063827982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 986583375983266072, guid: d300aae58e57e344da78c2f44a778d81,
+    type: 3}
+  m_PrefabInstance: {fileID: 986583374063827981}
+  m_PrefabAsset: {fileID: 0}
