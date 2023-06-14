@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 //Sets class same matching Json format (vars and Json names are casesensitive)
@@ -15,7 +13,7 @@ public class MonsterClass
 }
 
 [System.Serializable]
-public class Monster
+public class Monster : ScriptableObject
 {
     public string _name;
     public float _height;

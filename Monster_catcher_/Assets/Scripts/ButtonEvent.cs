@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class ButtonEvent : MonoBehaviour
 {
     [SerializeField] int sceneIndex;
+    [SerializeField] GameObject _enemey;
 
     public Button fightButton;
     public Button checkButton;
@@ -34,6 +35,13 @@ public class ButtonEvent : MonoBehaviour
     // Run when fight button is pressed.
     void FightButton()
     {
+        // MonsterSpawner enemeyData =_enemey.GetComponent<MonsterSpawner>();
+        // (string,int, MonsterClass) enemyTypeAndIndex = enemeyData.GetMonsterData();
+        // string type = enemyTypeAndIndex.Item1;
+        // int enemyIndex = enemyTypeAndIndex.Item2;
+        // MonsterClass jsonData = enemyTypeAndIndex.Item3;
+        
+        // Debug.Log(jsonData);
         Debug.Log("The fight button was pressed!");
     }
     void CheckButton()

@@ -17,6 +17,10 @@ public class MonsterSpawner : MonoBehaviour
     public int _aggressionLevel;
     public int _rarity;
 
+
+    private string _type;
+    private int _randNum;
+    private MonsterClass _monsterData;
     void Start()
     {
 
@@ -62,7 +66,17 @@ public class MonsterSpawner : MonoBehaviour
             _aggressionLevel = enemy._aggressionLevel;
             _rarity = enemy._rarity;
 
+            // setMonsterData(monsterType, randSelector, monsterData);
+
             Debug.Log($"Monster Spawned {typeOfMonster[randSelector]._name}");
             Debug.Log($"Health = {typeOfMonster[randSelector]._health}");
     }
+    // private void setMonsterData(string monsterType,int randSelector, MonsterClass monster){
+    //     _type = monsterType;
+    //     _randNum = randSelector;
+    //     _monsterData = monster;
+    // }
+    // public (string,int,MonsterClass) GetMonsterData(){
+    //     return (_type, _randNum, _monsterData);
+    // }
 }
