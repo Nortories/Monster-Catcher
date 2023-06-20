@@ -10,9 +10,16 @@ public class monster_encounter : MonoBehaviour
     [SerializeField][Range(1, 1000)] private int encounterProbablity;
     [SerializeField] TilemapCollider2D mosterCollider;
     [SerializeField] string sceneName;
+    [SerializeField] GameObject LevelLoader;
     private Collider2D other;
     private static int min = 1;
     private static int max = 10000;
+    private LevelLoader _LoaderScr;
+
+    void Start()
+    {
+        _LoaderScr = LevelLoader.GetComponent<LevelLoader>();
+    }
 
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -30,8 +37,8 @@ public class monster_encounter : MonoBehaviour
 
         if (randomNum < encounterProbablity)
         {
-            SceneManager.LoadScene(sceneName);
-            //sceneManager changing to new scene not working
+            //Get class level loaderaa
+            _LoaderScr.sceneChange(sceneName);
         }
     }
 }

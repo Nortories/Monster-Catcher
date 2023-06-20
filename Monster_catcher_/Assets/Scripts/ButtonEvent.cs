@@ -10,7 +10,7 @@ public class ButtonEvent : MonoBehaviour
     [SerializeField] int sceneIndex;
     [SerializeField] GameObject _enemey;
 
-    public Button fightButton;
+    public Button catchButton;
     public Button checkButton;
     public Button itemButton;
     public Button runButton;
@@ -19,8 +19,8 @@ public class ButtonEvent : MonoBehaviour
     void Start()
     {
 
-        Button fight = fightButton.GetComponent<Button>();
-        fight.onClick.AddListener(FightButton);
+        Button catcher = catchButton.GetComponent<Button>();
+        catcher.onClick.AddListener(CatchButton);
 
         Button check = checkButton.GetComponent<Button>();
         check.onClick.AddListener(CheckButton);
@@ -34,7 +34,7 @@ public class ButtonEvent : MonoBehaviour
     }
     
     // Run when fight button is pressed.
-    void FightButton()
+    void CatchButton()
     {
         // Gets a copy of monster data from encounter Scene enemey
         MonsterSpawner enemeyData =_enemey.GetComponent<MonsterSpawner>();
