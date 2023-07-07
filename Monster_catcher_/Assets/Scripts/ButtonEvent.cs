@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+using Firebase.Database;
 
 public class ButtonEvent : MonoBehaviour
 {
@@ -14,6 +15,10 @@ public class ButtonEvent : MonoBehaviour
     public Button checkButton;
     public Button itemButton;
     public Button runButton;
+
+    private DatabaseReference dbReference;
+    private string _userID;
+    // Start is called before the first frame update
 
     // Start is called before the first frame update
     void Start()
@@ -31,8 +36,10 @@ public class ButtonEvent : MonoBehaviour
         Button run = runButton.GetComponent<Button>();
         run.onClick.AddListener(RunButton);
         
+        _userID = SystemInfo.deviceUniqueIdentifier;
+        
     }
-    
+
     // Run when fight button is pressed.
     void CatchButton()
     {
@@ -64,16 +71,20 @@ public class ButtonEvent : MonoBehaviour
         // add unique id to monsters name before converting to json
         DateTime DT = DateTime.Now;
         caughtEnemey._id = ($"_id-{DT.ToString()}");
+        dbReference = FirebaseDatabase.DefaultInstance.RootReference;
 
         // set caughtEnemy Data back to Json format
         string json = JsonUtility.ToJson(caughtEnemey);
 
         // PUT json to DB
+        //var timeString = (time.ToString()).Replace(":", "").Replace(".", "");
+        dbReference.Child("BackPack").Child(DT.ToString("yyyyMMddHHmmssfff")).SetRawJsonValueAsync(json);
+        Debug.Log("monsterSaved?");
 
         
 
         Debug.Log(json);
-        Debug.Log("The fight button was pressed!");
+        Debug.Log("The catch button was pressed!");
         // Scene change back to map
         RunButton();
     }

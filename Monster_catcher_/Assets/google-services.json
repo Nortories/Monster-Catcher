@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "325549729976",
+    "firebase_url": "https://monstercatcher-322d1-default-rtdb.firebaseio.com/",
+    "project_id": "monstercatcher-322d1",
+    "storage_bucket": "monstercatcher-322d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325549729976:android:29c05a72a9d95fa4472c4d",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.Monster_catcher_"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325549729976-3sooob1k099fqeer6t48rsr3oqe7r6hf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXBH_BoSOzvsRbI2jPpqdhWFFqZdJyVaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325549729976-3sooob1k099fqeer6t48rsr3oqe7r6hf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

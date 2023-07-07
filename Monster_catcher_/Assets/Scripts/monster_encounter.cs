@@ -33,7 +33,7 @@ public class monster_encounter : MonoBehaviour
     private void EncounterProb()
     {
         int randomNum = Random.Range(min, max);
-        Debug.Log(randomNum);
+        //Debug.Log(randomNum);
 
         if (randomNum < encounterProbablity)
         {

@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
             {
                 animator.SetBool("IsMoving", true);
             }
-            Debug.Log(rb.velocity.magnitude);
+            // Debug.Log(rb.velocity.magnitude);
     }
 
     void FixedUpdate() {
