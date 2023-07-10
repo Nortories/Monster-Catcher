@@ -1,16 +1,16 @@
 {
   "stone": [
     {
-      "_name": "Troll",
+      "_name": "Slime",
       "_height": 15,
       "_power": 40,
       "_health": 60,
-      "_personality": "Fierce",
+      "_personality": "Odd",
       "_aggressionLevel": 40,
       "_rarity": 40
     },
     {
-      "_name": "Golems",
+      "_name": "Jelly",
       "_height": 50,
       "_power": 75,
       "_health": 85,
@@ -19,12 +19,39 @@
       "_rarity": 30
     },
     {
-      "_name": "Stone Snake",
+      "_name": "Clown",
       "_height": 5,
       "_power": 80,
       "_health": 90,
       "_personality": "Wild",
+      "_aggressionLevel": 70,
+      "_rarity": 30
+    },
+    {
+      "_name": "Worm",
+      "_height": 15,
+      "_power": 40,
+      "_health": 60,
+      "_personality": "Fierce",
       "_aggressionLevel": 80,
+      "_rarity": 40
+    },
+    {
+      "_name": "Anemone",
+      "_height": 50,
+      "_power": 75,
+      "_health": 85,
+      "_personality": "Shy",
+      "_aggressionLevel": 30,
+      "_rarity": 30
+    },
+    {
+      "_name": "SweetDog",
+      "_height": 5,
+      "_power": 80,
+      "_health": 90,
+      "_personality": "Cheerful",
+      "_aggressionLevel": 20,
       "_rarity": 30
     }
   ],
