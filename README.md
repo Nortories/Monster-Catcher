@@ -2,7 +2,7 @@
 
 This is a game is a monster catcher game. The goal of the game is to collect monsters from around the map. The game is built so a player walks around the map and in certain areas they have a chance of encountering a monster! If they encounter a monster, they can choose to run or catch the monster.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/Ju6ihC_QtJI)
 
 # Development Environment
 
