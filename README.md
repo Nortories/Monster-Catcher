@@ -16,20 +16,24 @@
 
 # Collaborators
 
-Allison Berry.  
+Allison Berry 
 Josh Sooaemalelagi   
-Brooklynn Hathaway    
+Brooklynn Hathaway   
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [Unity Forum Loading Json](https://forum.unity.com/threads/how-to-read-json-file.401306/)
 * [W3Schools changing scenes on collision unity](https://www.w3schools.blog/how-to-change-scenes-on-collision-unity)
 * [Adding large files to git](https://medium.com/linkit-intecs/how-to-upload-large-files-to-github-repository-2b1e03723d2)
+* 
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* Each area is connected to a type of monster
+* Allow the user to view their caught monsters (Backpack)
+* More interactions between the monster and player before they're caught
+
+# Credits
+Music: John Hathaway
+Tile Sets:
+Character Sprite:
